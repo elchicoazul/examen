@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using EXAMEN.Models;
+using EXAMEN.Data;
+
 
 namespace EXAMEN.Controllers
 {
@@ -28,6 +30,8 @@ namespace EXAMEN.Controllers
         public IActionResult Registrar(Bono objContacto){
             if (ModelState.IsValid)
             {
+                _context.Add(objContacto);
+                _context.SaveChanges();
                 objContacto.Response = "Fue guardado  con  exito";
             }
             return View("index", objContacto);

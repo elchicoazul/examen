@@ -14407,13 +14407,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\git\\examen\\examen\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "d:\\git\\examen\\examen\\Views\\Bono\\Index.cshtml",
+      "TargetPath": "Views\\Bono\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\git\\examen\\examen\\Views\\Bonos\\Index.cshtml",
-      "TargetPath": "Views\\Bonos\\Index.cshtml",
+      "FilePath": "d:\\git\\examen\\examen\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
