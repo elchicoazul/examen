@@ -15,10 +15,11 @@ namespace EXAMEN.Controllers
     {
 
        private readonly ILogger<BonoController> _logger;
-
-        public BonoController(ILogger<BonoController> logger)
+        private readonly DatabaseContext _context;
+        public BonoController(ILogger<BonoController> logger,DatabaseContext context)
         {
-            _logger = logger;
+             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()

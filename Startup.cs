@@ -25,8 +25,11 @@ namespace examen
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+          public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<DatabaseContext>(options =>
+                options.UseNpgsql(
+                    Configuration.GetConnectionString("postgress-db")));
             services.AddControllersWithViews();
         }
 

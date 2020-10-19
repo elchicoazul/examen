@@ -12,6 +12,6 @@ namespace EXAMEN.Data
         {
         }
 
-         public DbSet<EXAMEN.Models.Contacto> Contactos { get; set; }
+         public DbSet<EXAMEN.Models.Bono> bonos { get; set; }
     }
 }
